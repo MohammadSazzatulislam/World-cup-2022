@@ -24,9 +24,7 @@ header section start
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/Bacground-image/Blog.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #161616;
     color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -116,7 +114,6 @@ header section start
 .nav-button{
 margin-top: 20px;
 }
-
  .blog{
     border: 1px solid rgba(171, 169, 169, 0.166);
     width: 310px;
@@ -212,8 +209,7 @@ margin-top: 20px;
   .footer-nav > ul >li {
     list-style: none;
     color:rgba(150, 145, 145, 0.938);
-    padding-right: 30px;
-    
+    padding-right: 30px;    
   }
 
  .media-icon{
@@ -450,20 +446,20 @@ width: 100%;
     margin-top: 10px ;
     margin-bottom: 20px;
   }
-
-  .upcomaing-banner{
-    background-image: url(/Bacground-image/Upcoming-Match.jpg);
-  }
-
   #Upcoming-Match-button{
       background-color:rgba(235, 9, 9, 0.914);
-      color: #fff;
-    
+      color: #fff;  
   }
 
   /* ----------------------------------------
     upcomaing match site start media quary
     -------------------------------------- */
+
+    
+  /*--------------------
+        mobile device 
+   ---------------------*/
+
     @media only screen and (max-width:576px){
       .banner-two{    
         width: 100%;
@@ -475,7 +471,6 @@ width: 100%;
         width: 100%;
         height: 100%;
       }
-
       .upcomaing-card{ 
         width: 100%;          
        display: flex;
@@ -489,6 +484,13 @@ width: 100%;
     
     }
 
+
+    
+  /*--------------------
+        Tablet device 
+   ---------------------*/
+
+   
     @media only screen and (min-width:768px) and (max-width:992px){
       .upcomaing-card{ 
         display: grid;
