@@ -61,10 +61,10 @@ header section start
 .button-banner{
     margin-top: 30px;
 }
-.banner-images{  
+.banner-images, .banner-two, .banner-three{  
     width: 55%;
 }
-.banner-images img{
+.banner-images,.banner-two, .banner-three img{
     width: 65%; 
     margin-left: 30px;  
 }
@@ -287,7 +287,7 @@ margin-top: 20px;
       font-size: 10px;
       padding: 5px 10px;             
     } 
-    .banner-images{    
+    .banner-images, .banner-tow, .banner-three{    
       width: 50%;
       height: 250px;
       padding-top: 20px;       
@@ -412,10 +412,7 @@ width: 100%;
 
   /* -------------------------
   upcomaing match site start 
-  ----------------------------*/
-.banner-two{
-  width: 50%; 
-}
+  ----------------------------*/ 
   .upcomaing-card{
     width: 100%;    
     display: grid;
@@ -461,16 +458,7 @@ width: 100%;
    ---------------------*/
 
     @media only screen and (max-width:576px){
-      .banner-two{    
-        width: 100%;
-        height: 100%;
-        padding: 0 0 20px 0;              
-      }
-      .banner-two img{
-        padding:10px;      
-        width: 100%;
-        height: 100%;
-      }
+      
       .upcomaing-card{ 
         width: 100%;          
        display: flex;
@@ -490,7 +478,7 @@ width: 100%;
         Tablet device 
    ---------------------*/
 
-   
+
     @media only screen and (min-width:768px) and (max-width:992px){
       .upcomaing-card{ 
         display: grid;
@@ -499,13 +487,14 @@ width: 100%;
       .upcomaing-card-item{
       width: 100%;
       }
-      .banner-two{    
-        width: 100%;
-        height: 100%;                     
-      }
-      .banner-two img{            
-        width: 100%;
-        height: 100%;
-      }
+      
     }
     
+/*----------------------
+ All group site start 
+ -----------------------*/
+ /* .banner-three{
+      width: 50%; 
+ } */
+
+
