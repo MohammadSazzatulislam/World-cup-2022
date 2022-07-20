@@ -1,0 +1,509 @@
+/*--------------
+  google font
+-------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------
+header section start
+--------------------- */
+
+.container{
+    width: 100%;
+    height: fit-content;    
+}
+.banner-items{
+    width: 90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;    
+    background-image: url(/Bacground-image/Blog.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover; 
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;   
+}
+.banner-deatails{
+    width: 45%;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+.banner-title{
+    font-size: 3.4em;
+    line-height: 65px;
+    margin-bottom: 30px;    
+}
+.banner-info{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.banner-button{
+    border: 0;   
+    display: flex;
+    align-items: center; 
+    justify-content: center;    
+    background-color:rgb(235, 9, 9);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button-banner{
+    margin-top: 30px;
+}
+.banner-images{  
+    width: 55%;
+}
+.banner-images img{
+    width: 65%; 
+    margin-left: 30px;  
+}
+
+/*-----------------
+ blog section start
+ --------------------*/
+ .blog-container{
+    width: 100%;
+    height: fit-content;    
+ }
+
+ .blog-items{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 120px;
+ }
+ .blog-nav{   
+    width: 250px;
+    height: 250px;
+    background-color: #161616; 
+    border-radius: 8px;
+    padding: 10px; 
+    margin-right: 20px; 
+ }
+ #Blog{
+  background-color:rgba(235, 9, 9, 0.914);
+  color: #fff;
+ }
+ .blog-nav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    width:180px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+ }
+.nav-button{
+margin-top: 20px;
+}
+
+ .blog{
+    border: 1px solid rgba(171, 169, 169, 0.166);
+    width: 310px;
+    height: 360px;    
+    border-radius: 10px;    
+ }
+ .blogs{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 20px;   
+}
+ .blog-image img{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+ .blog-info{
+    padding: 15px;
+ }
+ .blog-info span{
+    border: 2px solid gray;
+    padding: 2px 8px;
+    border-radius: 4px;
+ }
+ .blog-title{
+    margin-top: 20px;
+    font-size: 1em;
+ }
+ .blog-duration{
+    margin-top: 20px;
+    color: rgba(128, 128, 128, 0.935);    
+ }
+ .blog-duration i{
+  margin-right: 10px;
+ }
+ .fa-message{
+  margin-left: 20px;
+ }
+ 
+
+
+   /*---------------------
+        view button
+    -------------------- */
+
+    .view-button {
+        visibility: hidden;
+        display: inline-block;
+        width: 100%;   
+        text-align: center; 
+        margin-top: 40px;        
+    }
+    .buttons{
+        text-decoration: none;
+        padding: 10px 20px ;
+        border-radius: 4px ;
+        background-color: orangered;
+        color: #fff;
+    }
+
+
+ /*---------------------
+  footer section start
+  ---------------------- */
+
+  .footer-container{
+    width: 100%;
+    margin-top: 60px;
+    background-color: #161616;
+    border: 1px solid;
+  }
+  .footer-item{    
+    height: 60vh;    
+    text-align: center;
+  }  
+  .footer-title{
+    font-size: 3em;
+    margin: 100px 0 40px 0;
+    color: #fff;
+  }
+  .footer-item hr{ 
+    border-color: rgba(128, 128, 128, 0.31);
+    margin: 0 100px;
+  }
+  .footer-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .footer-nav > ul >li {
+    list-style: none;
+    color:rgba(150, 145, 145, 0.938);
+    padding-right: 30px;
+    
+  }
+
+ .media-icon{
+  margin-top: 15px;
+}
+  .media-icon a{  
+    display: inline-block; 
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 30px;  
+  }
+  
+  .fa-facebook-square:hover{    
+    color: rgba(7, 19, 156, 0.938);
+    background-color: rgba(255, 255, 255, 0.927);
+    border-radius: 25px;
+    padding: 7px;   
+  }
+  .fa-instagram:hover{    
+    color: rgba(194, 4, 4, 0.938);
+    background-color: rgba(255, 255, 255, 0.927);
+    border-radius: 25px;
+    padding: 7px;   
+  }
+  .fa-twitter-square:hover{    
+    color: rgba(7, 19, 156, 0.938);
+    background-color: rgba(255, 255, 255, 0.927);
+    border-radius: 25px;
+    padding: 7px;   
+  }
+  .fa-linkedin:hover{    
+    color: rgba(196, 8, 8, 0.938);
+    background-color: rgba(255, 255, 255, 0.927);
+    border-radius: 25px;
+    padding: 7px;   
+  }
+
+
+  /*------------------- 
+        media quary
+   --------------------*/
+
+   /* -------------------
+         Mobile-device
+    --------------------*/
+
+  @media only screen and (max-width:576px) {
+    .banner-items{
+      width: 90%;
+      height: 100vh;      
+      display: flex;
+      flex-direction: column;      
+      justify-content: center;                 
+    }    
+    .banner-deatails{
+      width:100%;
+      height: 250px;
+      display: block;
+      padding: 20px;
+      text-align: center; 
+      margin: 0 auto;   
+      margin-bottom:50px ; 
+      line-height: 20px;                 
+    }
+    .banner-title{
+      padding-top: 35px;
+      font-size: 2.4em;
+      line-height: 40px;     
+    }
+    .banner-deatails button{
+      margin-left: 39%;
+    }
+    .banner-button{         
+      font-size: 10px;
+      padding: 5px 10px;             
+    } 
+    .banner-images{    
+      width: 50%;
+      height: 250px;
+      padding-top: 20px;       
+      margin-bottom: 40px;      
+    }
+    .blog-items{
+      width: 100%;     
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+   } 
+    .blog-container{
+      width: 100%;
+      margin-top: 0;
+    }
+    .blog-nav{       
+      width: 100%;      
+      background-color: #ffffff;      
+   }  
+   .blog-nav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    width:180px;
+    height: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.346);    
+    border-radius: 10px;
+ }
+  .blogs{ 
+      width: 100%;          
+      display: flex;
+      flex-direction: column;      
+  }
+.blog{
+  width: 90%;  
+  margin-left: auto;
+  margin-right: auto;  
+}
+.footer-container{
+  width: 100%;
+  margin-top: 0;
+  background-color: #161616;
+  border: 1px solid;
+}
+.footer-item{    
+  height: 70vh;    
+  text-align: center;
+} 
+.footer-nav > ul {
+  font-size: 15px;
+  display: flex;
+  flex-direction:column;  
+}
+
+}
+
+
+  /*--------------------
+        Tablet device 
+   ---------------------*/
+   @media only screen and (min-width:768px) and (max-width:992px){
+       .container{
+        width: 100%;  
+        height: fit-content;     
+       }
+
+    .banner-items{
+      width: 90%;
+      height: fit-content;
+      padding-right: 30px;    
+                      
+    }
+    .banner-deatails{
+      width: 50%;     
+  }
+  .banner-title{
+    font-size: 2em;
+    line-height: 35px;
+    margin-bottom: 10px;    
+}
+
+.blog-items{
+  margin-top: 0;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-nav{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.nav-button{
+  border: 1px solid rgba(128, 128, 128, 0.859);
+}
+
+.blogs{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog{
+width: 100%;
+}
+
+.footer-container{
+  width: 100%;
+}
+
+.view-button{
+  visibility: visible;
+}
+
+  }
+
+  /* -------------------------
+  upcomaing match site start 
+  ----------------------------*/
+.banner-two{
+  width: 50%; 
+}
+  .upcomaing-card{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;   
+  }
+  .upcomaing-card-item{
+    border: 1px solid rgba(171, 169, 169, 0.373);
+    width: 250px;
+    height: 200px;  
+    border-radius: 8px;        
+ }
+  .upcomaing-flag{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .upcomaing-flag img{
+    margin-top: 40px;    
+    width: 90px;
+    height: 55px;   
+  }
+  .upcoming-info{
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+  }
+
+  .upcomaing-banner{
+    background-image: url(/Bacground-image/Upcoming-Match.jpg);
+  }
+
+  #Upcoming-Match-button{
+      background-color:rgba(235, 9, 9, 0.914);
+      color: #fff;
+    
+  }
+
+  /* ----------------------------------------
+    upcomaing match site start media quary
+    -------------------------------------- */
+    @media only screen and (max-width:576px){
+      .banner-two{    
+        width: 100%;
+        height: 100%;
+        padding: 0 0 20px 0;              
+      }
+      .banner-two img{
+        padding:10px;      
+        width: 100%;
+        height: 100%;
+      }
+
+      .upcomaing-card{ 
+        width: 100%;          
+       display: flex;
+       flex-direction: column;
+    }
+       .upcomaing-card-item{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    }
+
+    @media only screen and (min-width:768px) and (max-width:992px){
+      .upcomaing-card{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .upcomaing-card-item{
+      width: 100%;
+      }
+      .banner-two{    
+        width: 100%;
+        height: 100%;                     
+      }
+      .banner-two img{            
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
