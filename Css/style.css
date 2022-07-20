@@ -15,12 +15,11 @@ header section start
 --------------------- */
 
 .container{
-    width: 100%;
-    height: fit-content;    
+    width: 100%;      
 }
 .banner-items{
     width: 90%;
-    height: fit-content;
+    height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,40 +32,39 @@ header section start
     border-radius: 20px;   
 }
 .banner-deatails{
-    width: 45%;
+    width: 50%;
     margin-left: 100px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 .banner-title{
-    font-size: 3.4em;
-    line-height: 65px;
-    margin-bottom: 30px;    
+    font-size: 3em;
+    line-height: 60px;
+    margin-bottom: 20px;    
 }
 .banner-info{
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 12px;
+    margin-top: 0;    
 }
-.banner-button{
+.banner-button a{
     border: 0;   
-    display: flex;
-    align-items: center; 
-    justify-content: center;    
     background-color:rgb(235, 9, 9);
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 15px;    
 }
-.button-banner{
-    margin-top: 30px;
+.banner-button{
+    margin-top: 20px;
+}
+.fa-angle-right{
+  margin-left: 5px;
 }
 .banner-images, .banner-two, .banner-three{  
-    width: 55%;
+    width: 50%;
 }
 .banner-images,.banner-two, .banner-three img{
-    width: 65%; 
-    margin-left: 30px;  
+    width: 70%; 
+  
 }
 
 /*-----------------
@@ -259,40 +257,31 @@ margin-top: 20px;
 
   @media only screen and (max-width:576px) {
     .banner-items{
-      width: 90%;
-      height: 100vh;      
+      width: 100%;
+      height: 90vh;      
       display: flex;
-      flex-direction: column;      
-      justify-content: center;                 
+      flex-direction: column;          
+      justify-content: center;
+      margin-top: 0;                 
     }    
     .banner-deatails{
-      width:100%;
-      height: 250px;
-      display: block;
+      width:90%; 
       padding: 20px;
       text-align: center; 
-      margin: 0 auto;   
-      margin-bottom:50px ; 
-      line-height: 20px;                 
+      margin-left: auto;   
+      margin-right: auto;
+      margin-bottom:20px ; 
+      line-height: 20px;                     
     }
-    .banner-title{
-      padding-top: 35px;
+    .banner-title{      
       font-size: 2.4em;
-      line-height: 40px;     
-    }
-    .banner-deatails button{
-      margin-left: 39%;
-    }
-    .banner-button{         
-      font-size: 10px;
-      padding: 5px 10px;             
-    } 
+      line-height: 40px;         
+    }     
     .banner-images, .banner-tow, .banner-three{    
-      width: 50%;
-      height: 250px;
-      padding-top: 20px;       
-      margin-bottom: 40px;      
+      width: 50%;      
+      margin-top: 20px;    
     }
+
     .blog-items{
       width: 100%;     
       display: flex;
@@ -323,25 +312,24 @@ margin-top: 20px;
   .blogs{ 
       width: 100%;          
       display: flex;
-      flex-direction: column;      
+      flex-direction: column;           
   }
 .blog{
   width: 90%;  
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;   
 }
 .footer-container{
   width: 100%;
   margin-top: 0;
-  background-color: #161616;
-  border: 1px solid;
+  background-color: #161616;  
 }
 .footer-item{    
-  height: 70vh;    
+  height: 60vh;    
   text-align: center;
 } 
 .footer-nav > ul {
-  font-size: 15px;
+  font-size: 15px;  
   display: flex;
   flex-direction:column;  
 }
@@ -354,23 +342,26 @@ margin-top: 20px;
    ---------------------*/
    @media only screen and (min-width:768px) and (max-width:992px){
        .container{
-        width: 100%;  
-        height: fit-content;     
+        width: 100%;                  
        }
 
-    .banner-items{
+    .banner-items{    
       width: 90%;
-      height: fit-content;
-      padding-right: 30px;    
-                      
+      height: 60vh;
+      margin-left: auto;
+      margin-left: auto;
+      padding-right: 10px;                      
     }
     .banner-deatails{
-      width: 50%;     
+      width: 50%; 
   }
   .banner-title{
     font-size: 2em;
-    line-height: 35px;
+    line-height: 30px;
     margin-bottom: 10px;    
+}
+.banner-images, .banner-tow, .banner-three{    
+  width: 50%;  
 }
 
 .blog-items{
@@ -403,6 +394,11 @@ width: 100%;
 .footer-container{
   width: 100%;
 }
+.footer-item{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .view-button{
   visibility: visible;
@@ -422,26 +418,34 @@ width: 100%;
   }
   .upcomaing-card-item{
     border: 1px solid rgba(171, 169, 169, 0.373);
-    width: 250px;
-    height: 200px;  
-    border-radius: 8px;        
+    width: 310px;
+    height: 360px;  
+    border-radius: 10px;        
  }
   .upcomaing-flag{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: 600;
+    justify-content: space-evenly; 
+    align-items: center;     
   }
-
+  .upcomaing-flag span{
+    margin-top: 100px;
+    font-size: 17px;
+    font-weight: 700;
+  }
   .upcomaing-flag img{
-    margin-top: 40px;    
-    width: 90px;
-    height: 55px;   
+    margin-top: 100px;    
+    width: 100px;
+    height: 100px;   
   }
   .upcoming-info{
     text-align: center;
     margin-top: 10px ;
     margin-bottom: 20px;
+    padding: 10px 0;
+  }
+  .upcaming-card-title{
+    margin-top: 10px;
+    margin-bottom:10px ;
   }
   #Upcoming-Match-button{
       background-color:rgba(235, 9, 9, 0.914);
@@ -461,8 +465,8 @@ width: 100%;
       
       .upcomaing-card{ 
         width: 100%;          
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
        .upcomaing-card-item{
       width: 90%;
@@ -486,6 +490,14 @@ width: 100%;
       }
       .upcomaing-card-item{
       width: 100%;
+      }
+      .footer-container{
+        width: 100%;
+      }
+      .footer-item{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
       }
       
     }
@@ -545,6 +557,10 @@ margin-left: 20px;
  ---------------------------*/
 
 
+ /*-----------------------
+        mobile device 
+   ------------------------*/
+
  @media only screen and (max-width:576px){
   .groups{ 
     width: 100%;          
@@ -552,12 +568,16 @@ margin-left: 20px;
     flex-direction: column;      
 }
 .group{
-width: 90%;  
-margin-left: auto;
-margin-right: auto;  
+  width: 90%;  
+  margin-left: auto;
+  margin-right: auto;  
 }
  }
 
+
+ /*-----------------------
+        Tablet device 
+   ------------------------*/
 
  @media only screen and (min-width:768px) and (max-width:992px){
 
@@ -568,7 +588,13 @@ margin-right: auto;
   .group{
   width: 100%;
   }
-  
-
+  .footer-container{
+    width: 100%;
+  }
+  .footer-item{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
  }
