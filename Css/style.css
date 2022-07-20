@@ -493,8 +493,78 @@ width: 100%;
 /*----------------------
  All group site start 
  -----------------------*/
- /* .banner-three{
-      width: 50%; 
- } */
+ .group{
+  border: 1px solid rgba(171, 169, 169, 0.166);
+  width: 310px;
+  box-shadow: 10px 10px 40px rgba(151, 148, 148, 0.347) ;
+  height: 360px;    
+  border-radius: 10px;    
+}
+.groups{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+grid-gap: 20px;   
+}
+.group-image img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.group-info{
+  padding: 15px;  
+  text-align: center;
+}
+.group-info span{  
+  font-size:1.7em;
+  font-weight: 700; 
+}
+.group-title{
+  margin-top: 10px;
+  font-size: 1em;
+}
+.group-duration{
+  margin-top: 20px;
+  color: rgba(128, 128, 128, 0.935);    
+}
+.group-duration i{
+margin-right: 10px;
+}
+.fa-thumbs-down, .fa-heart{
+margin-left: 20px;
+}
 
 
+/*---------------------------
+ all group site media quary 
+ ---------------------------*/
+
+
+ @media only screen and (max-width:576px){
+  .groups{ 
+    width: 100%;          
+    display: flex;
+    flex-direction: column;      
+}
+.group{
+width: 90%;  
+margin-left: auto;
+margin-right: auto;  
+}
+ }
+
+
+ @media only screen and (min-width:768px) and (max-width:992px){
+
+  .groups{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .group{
+  width: 100%;
+  }
+  
+  
+
+ }
