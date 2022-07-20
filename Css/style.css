@@ -24,9 +24,7 @@ header section start
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;    
-    background-image: url(/Bacground-image/Upcoming-Match.jpg);
-    background-repeat: no-repeat;   
-    background-size: cover; 
+    background-color: #161616;     
     overflow: hidden;
     color: #fff;
     display: flex;
