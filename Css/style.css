@@ -23,7 +23,7 @@ header section start
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
+    background:linear-gradient( #545353,#000f19);
     color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +31,7 @@ header section start
     overflow: hidden;   
     border-radius: 20px;   
 }
+
 .banner-deatails{
     width: 50%;
     margin-left: 100px;
@@ -45,19 +46,84 @@ header section start
     font-size: 12px;
     margin-top: 0;    
 }
-.banner-button a{
-    border: 0;   
-    background-color:rgb(235, 9, 9);
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 4px;
-    font-size: 15px;    
+.banner-special-button{
+margin-top: 20px;
 }
-.banner-button{
-    margin-top: 20px;
+
+/* button */
+
+.banner-button {
+  min-width: 150px;
+  min-height: 50px;  
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #b00b71dd;
+  background: linear-gradient(90deg, rgba(129, 230, 217, 0.48,rgba(79, 209, 196, 0.512),197,1) 100%);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 30px rgba(8, 194, 175, 0.769);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+  content: '';
+  border-radius: 3px;
+  min-width: calc(150px + 12px);
+  min-height: calc(50px + 12px);
+  border: 3px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
 }
-.fa-angle-right{
-  margin-left: 5px;
+
+.button:hover, .button:focus {
+  color: #ff007b;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 5px solid #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
 .banner-images, .banner-two, .banner-three{  
     width: 50%;
@@ -85,13 +151,13 @@ header section start
  .blog-nav{   
     width: 250px;
     height: 250px;
-    background-color: #161616; 
+    background:linear-gradient( #450b13b7,#165223c4);
     border-radius: 8px;
     padding: 10px; 
     margin-right: 20px; 
  }
  #Blog{
-  background-color:rgba(235, 9, 9, 0.914);
+  background:linear-gradient( #9e9d9d,#0069ab);
   color: #fff;
  }
  .blog-nav a{
@@ -182,7 +248,7 @@ margin-top: 20px;
   .footer-container{
     width: 100%;
     margin-top: 60px;
-    background-color: #161616;
+    background-color:rgba(0, 0, 0, 0.878);
     border: 1px solid;
   }
   .footer-item{    
@@ -195,7 +261,7 @@ margin-top: 20px;
     color: #fff;
   }
   .footer-item hr{ 
-    border-color: rgba(128, 128, 128, 0.31);
+    border-color: rgba(219, 209, 209, 0.31);
     margin: 0 100px;
   }
   .footer-nav ul{
@@ -206,7 +272,7 @@ margin-top: 20px;
   }
   .footer-nav > ul >li {
     list-style: none;
-    color:rgba(150, 145, 145, 0.938);
+    color:rgb(174, 173, 173);
     padding-right: 30px;    
   }
 
@@ -447,8 +513,11 @@ width: 100%;
     margin-top: 10px;
     margin-bottom:10px ;
   }
+  .upcaming-button{
+    background:linear-gradient( #0990afd6,#7b3b9b,#b83b43e3);   
+  }
   #Upcoming-Match-button{
-      background-color:rgba(235, 9, 9, 0.914);
+    background:linear-gradient( #11a9cbcb,#a340d4d1,#d1343ecb);   
       color: #fff;  
   }
 
@@ -505,8 +574,11 @@ width: 100%;
 /*----------------------
  All group site start 
  -----------------------*/
+ .All-group{
+  background:linear-gradient( #19057b76,#045f86,#05793881);
+}
  #All-group-button{
-  background-color:rgba(235, 9, 9, 0.914);
+  background:linear-gradient( #2c14a4b1,#12719a,#19ae5ac8);
   color: #fff;  
 }
  .group{
