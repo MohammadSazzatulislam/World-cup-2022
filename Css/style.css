@@ -24,7 +24,9 @@ header section start
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
+    background-image: url(/Bacground-image/Blog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     margin-left: auto;
     margin-right: auto;
